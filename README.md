@@ -8,6 +8,10 @@ An automated URL analysis and threat intelligence enrichment CLI tool engineered
 
 ---
 
+## 📸 Tool Preview
+
+![Phishing URL Detector Execution Preview](assets/tool_preview.png)
+
 ## Key Features
 
 - **Multi-Factor Heuristic Engine:** Analyzes URL length, domain entropy (Shannon Entropy for DGAs), subdomain depth, IPv4 host usage, and keyword targeting.
