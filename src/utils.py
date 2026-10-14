@@ -25,7 +25,8 @@ def print_cli_report(results: dict):
     print(f"\n {Fore.LIGHTBLUE_EX}[+] Heuristic Findings:{Style.RESET_ALL}")
     if results["findings"]:
         for finding in results["findings"]:
-            print(f"   {Fore.RED}![Style.RESET_ALL} {finding}")
+            # Fixed the f-string closing brace syntax error here:
+            print(f"   {Fore.RED}!{Style.RESET_ALL} {finding}")
     else:
         print(f"   {Fore.GREEN}✓{Style.RESET_ALL} No structural anomalies detected.")
 
