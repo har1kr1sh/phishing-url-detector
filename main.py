@@ -17,7 +17,8 @@ def print_banner():
     banner_path = os.path.join("banner", "banner.txt")
     if os.path.exists(banner_path):
         with open(banner_path, "r") as f:
-            print(Fore.CYN + f.read() + Style.RESET_ALL)
+            # Fixed Fore.CYN to Fore.CYAN here:
+            print(Fore.CYAN + f.read() + Style.RESET_ALL)
     else:
         print(f"{Fore.CYAN}[ Phishing URL & Threat Intelligence Analyzer ] - @har1kr1sh{Style.RESET_ALL}")
 
